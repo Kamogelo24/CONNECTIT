@@ -1,0 +1,98 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    position: relative;
+    width: 380px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+    .box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #45f3ff;
+        text-align: center;
+    }
+
+.inputBox {
+    position: relative;
+}
+
+    .inputBox .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+    }
+
+    .inputBox span {
+        position: absolute;
+        left: 0;
+        padding: 10px 0;
+        pointer-events: none;
+        font-size: 16px;
+        color: #fff;
+        transition: 0.5s;
+    }
+
+    .inputBox .form-control:focus ~ span,
+    .inputBox .form-control:valid ~ span {
+        transform: translateY(-20px);
+        font-size: 12px;
+        color: #ff6347;
+    }
+
+.btn {
+    width: 100%;
+    background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: linear-gradient(90deg, #45f3ff, #d9138a);
+    }
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+    .links a {
+        color: #8f8f8f;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
+
+        .links a:hover {
+            color: #45f3ff;
+        }
+
+.file-upload {
+    margin-top: 10px;
+}
